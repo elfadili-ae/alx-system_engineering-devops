@@ -1,2 +1,2 @@
 #!/bin/bash
-cat iacata | tail -n 1 >> iacata
+tail -n 1 iacata >> iacata
