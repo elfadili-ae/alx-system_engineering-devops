@@ -1,0 +1,2 @@
+#!/bin/bash
+tr "\t" ";" | sort --field-separator ";" -k 3 -nr | cut -d ";" -f 1 | head -n 10
