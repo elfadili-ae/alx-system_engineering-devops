@@ -1,0 +1,4 @@
+#!/bin/bash
+WATER="ewwatratewa"
+STIR="ti.itirtrtr"
+echo $((5#$(echo $WATER | tr 'water' 01234) + (5#$(echo $STIR | tr 'stir.' 01234)))) | tr 012345678
