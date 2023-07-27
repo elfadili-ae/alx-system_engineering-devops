@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
 #apache data
 
-
-log_file="apache-access.log"
-
-if [ -f "$log_file" ]; then
-    echo "Extracting IP addresses and status codes from $log_file:"
-
-    awk '{ print $1, $9 }' "$log_file"
-else
-    echo "File does not exist: $log_file"
-fi
+awk '{ print $1, $9 }' apache-access.log
