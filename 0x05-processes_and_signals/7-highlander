@@ -4,11 +4,11 @@
 inivi() {
     echo "I am invincible!!!"
 }
-trap inivi SIGINT
 
 i=1
 while ((i))
 do
     echo "To infinity and beyond"
     sleep 2
+    trap inivi SIGTERM
 done
