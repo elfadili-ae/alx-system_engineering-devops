@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-senderPattern = /\[from:(\w+)\]/
-receiverPattern = /\[to:(.*?)\]/
-flagsPattern = /\[flags:(.*?)\]/
+senderPattern = /\[from:(\+?[\w]+)\]/
+receiverPattern = /\[to:(\+?[0-9]+)\]/
+flagsPattern = /\[flags:([012\-:]*)\]/
 
 senders = ARGV[0].scan(senderPattern).flatten
 receivers = ARGV[0].scan(receiverPattern).flatten
