@@ -1,4 +1,2 @@
 #!/usr/bin/env ruby
-# reexp to match "School"
-
-/School/
+puts ARGV[0].scan(/School/).join
