@@ -1,6 +1,6 @@
 # ssh config file
 
-Host alx1
+Host *
      HostName 54.90.21.58
      User ubuntu
      Port 22
