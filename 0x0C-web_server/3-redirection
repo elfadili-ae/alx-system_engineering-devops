@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# install nginx
+
+apt update -y
+apt install -y nginx
+
+# listen on port 80
+ufw allow 'Nginx HTTP'
+
+echo "Hello World!" > /var/www/html/index.html
+
+# replace redirection
+new_string="location /redirect_me {\n\treturn 302 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}"
+sed -i '/location \/ {/,/}/c\'"$new_string"'' /etc/nginx/sites-available/default
+
+#Start nginx
+service nginx start
