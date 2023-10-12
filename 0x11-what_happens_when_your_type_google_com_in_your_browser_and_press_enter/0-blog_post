@@ -1,10 +1,15 @@
 The journey of typing google.com in your browser
 
-that computers can understand, and that thing is called an IP address. It starts with sending a Domain Name System (DNS) request to a DNS server.
-After Getting the IP address, a Transmission Control Protocol (TCP) connection is established between your computer and the server. The TCP/IP protocol handles the data exchanged through the internet. But before establishing this connection, the request goes through a firewall check to ensure that it complies with policies and that it poses no threats to the server.
-Before sending the data over the internet from the server, your borwser and the server engage in an SSL (Secure Sockets Layer) handshake to establish an encypted connection. And this encryption ensures that the data transmitted between the two ends remains private and secure.
-Now imagine that the number of google.com visitors per hour? Probably millions right? So Google needs more than just one server maybe 100 or 1000. but sometimes some visitors will not stay long on the server and an empty seat will available on the server and someone needs to balance the traffic between all these servers, s why we where our hero Load-Balancer joins the party. the load-balancer distributes evenly the requests on the servers linked to it.
-When your request reaches the server, the web server will handle it by locating the requested webpage and prepare it to be delivered back to your browser. And all the data is retrieved from the Database. The web server communicates with the database to fetch the data you asked for.
-Wow! it feels like a long journey right? With a simple action of typing the link and hitting enter, multiple systems working together behind the scenes to serve the webpage, from DNS resolution to load balancing, web servers, and databases then back to you!
+Have you ever wondered what happens when you type “https://www.google.com" into your browser and hit Enter? Yeah, you get the google webpage served in a split second. But wait! there is a lot happening behind the scenes to serve the webpage for you! Let’s take a quick look at the key steps involved in making this happen:
 
-~that
+begins with you entering the URL https://www.google.com in your browser’s address bar and hitting Enter. The borwser then needs to translate this human readable adress to something that computers can understand, and that thing is called an IP address. It starts with sending a Domain Name System (DNS) request to a DNS server.
+
+After Getting the IP address, a Transmission Control Protocol (TCP) connection is established between your computer and the server. The TCP/IP protocol handles the data exchanged through the internet. But before establishing this connection, the request goes through a firewall check to ensure that it complies with policies and that it poses no threats to the server.
+
+Before sending the data over the internet from the server, your borwser and the server engage in an SSL (Secure Sockets Layer) handshake to establish an encypted connection. And this encryption ensures that the data transmitted between the two ends remains private and secure.
+
+Now imagine that the number of google.com visitors per hour? Probably millions right? So Google needs more than just one server maybe 100 or 1000. but sometimes some visitors will not stay long on the server and an empty seat will available on the server and someone needs to balance the traffic between all these servers, that’s why we where our hero Load-Balancer joins the party. the load-balancer distributes evenly the requests on the servers linked to it.
+
+When your request reaches the server, the web server will handle it by locating the requested webpage and prepare it to be delivered back to your browser. And all the data is retrieved from the Database. The web server communicates with the database to fetch the data you asked for.
+
+Wow! it feels like a long journey right? With a simple action of typing the link and hitting enter, multiple systems working together behind the scenes to serve the webpage, from DNS resolution to load balancing, web servers, and databases then back to you!
