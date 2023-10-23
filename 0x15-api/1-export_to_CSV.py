@@ -21,7 +21,7 @@ if __name__ == "__main__":
     username = user.get("username")
     with open(user_ID + ".csv", "w") as file:
         for task in todos:
-            file.write("\"{}\", \"{}\", \"{}\", \"{}\"\n".format(
+            file.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
                 user_ID,
                 username,
                 task.get("completed"),
