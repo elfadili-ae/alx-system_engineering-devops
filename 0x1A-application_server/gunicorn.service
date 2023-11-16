@@ -1,6 +1,6 @@
 [Unit]
 Description=Gunicorn instance to serve airbnb
-After=netework.target
+After=network.target
 
 [Service]
 User=ubuntu
