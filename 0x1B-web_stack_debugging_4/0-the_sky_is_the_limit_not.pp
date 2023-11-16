@@ -6,6 +6,6 @@ exec {'fix the limit':
 }
 
 -> exec {'restart nginx':
-  command => 'service nginx restart',
-  path    => ['/bin/', '/usr/bin/']
+  command => 'nginx restart',
+  path    => '/etc/init.d',
 }
